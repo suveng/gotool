@@ -1,1 +1,1 @@
-module "gotool"
+module "github.com/suveng/gotool"
