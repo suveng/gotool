@@ -1,4 +1,4 @@
-package core
+package util
 
 type File interface {
 }
