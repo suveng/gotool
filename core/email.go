@@ -34,7 +34,8 @@ func createSMTPURL(hostname string, port string) string {
 
 // smtp 服务 授权
 func smtpAuthorize(from string, passwrod string, hostname string) smtp.Auth {
-	// todo:// 这里identify是干什么的, 不用传
+	// Usually identity should be the empty string, to act as username.
+	// 这里identify是干什么的, 不用传
 	auth := smtp.PlainAuth("", from, passwrod, hostname)
 	return auth
 }
