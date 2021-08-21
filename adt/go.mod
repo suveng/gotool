@@ -1,4 +1,4 @@
-module web
+module adt
 
 go 1.16
 
